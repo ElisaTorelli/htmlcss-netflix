@@ -15,6 +15,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #141414;
 }
 
 :root{
@@ -26,4 +27,20 @@
     --black: #141414;
     --red: #b9090b;
 
+}
+/*Lista 1F*/
+.F h4{
+    color: #fff;
+    margin: 16px 50px;
+}
+.lista{
+    display: flex;
+}
+.lista .show{
+    padding: 0 2px;
+    transition: 250ms all;
+}
+.lista .show:hover{
+    margin: 0 40px;
+    transform: scale(1.2);
 }
