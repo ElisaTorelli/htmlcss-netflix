@@ -11,239 +11,270 @@
 } */
 
 @font-face {
-    font-family: "Netflix Sans Bk";
-    src: url("./assets/fonts/NetflixSansBlack.ttf");
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Netflix Sans Bk";
+  src: url("./assets/fonts/NetflixSansBlack.ttf");
+  font-weight: 800;
+  font-style: normal;
 }
 @font-face {
-    font-family: "Netflix Sans";
-    src: url("./assets/fonts/NetflixSansRegular.ttf");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Netflix Sans";
+  src: url("./assets/fonts/NetflixSansRegular.ttf");
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* GENERAL SETTINGS */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* background-color: #141414; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: #141414; */
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    background-color: #141414;
+body {
+  background-color: #141414;
 }
 
 /* COLOR VARIABLES */
-:root{
-    --white: #fff;
-    --light-gray-1: #dddd;
-    --light-gray-2: #e5e5e5;
-    --gray-1: #8a8a8a;
-    --gray-2: #808080;
-    --black: #141414;
-    --red: #b9090b;
+:root {
+  --white: #fff;
+  --light-gray-1: #dddd;
+  --light-gray-2: #e5e5e5;
+  --gray-1: #8a8a8a;
+  --gray-2: #808080;
+  --black: #141414;
+  --red: #b9090b;
 }
 
-.whoIsWatching{
-    background-color: var(--black);
-    min-height: 100vh;
-    width: 100vw;
+.whoIsWatching {
+  background-color: var(--black);
+  min-height: 100vh;
+  width: 100vw;
 }
 
-.logo-section{
-    align-items: center;
-    background-color: rgb(20, 20, 20);
-    display: flex;
-    height: 7rem;
-    justify-content: flex-start;
-    margin: auto;
-    width: 95vw;
+.logo-section {
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  height: 7rem;
+  justify-content: flex-start;
+  margin: auto;
+  width: 95vw;
 }
 
-.logo-section a img{
-    cursor: pointer;
-    height: 4rem;
-    width: 10rem;
+.logo-section a img {
+  cursor: pointer;
+  height: 4rem;
+  width: 10rem;
 }
 
-.main-div{
-    align-items: center;
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    justify-content: center;
-    width: 100vw;
+.main-div {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  width: 100vw;
 }
 
-.main-div h1{
-    font-size: 6.5rem;
+.main-div h1 {
+  font-size: 6.5rem;
 }
 
-.member-div{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.member-div {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* PROFILE BOXES */
 .member-div .btn,
-.addIcon{
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.4rem;
-    border: none;
-    cursor: pointer;
-    height: 10vw;
-    margin-top: 64px;
-    margin-right: 3.5rem;
-    max-height: 20rem;
-    max-width: 20rem;
-    min-height: 8.4rem;
-    min-width: 8.4px;
-    outline: none;
-    position: relative;
-    width: 10vw;
+.addIcon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  height: 10vw;
+  margin-top: 64px;
+  margin-right: 3.5rem;
+  max-height: 20rem;
+  max-width: 20rem;
+  min-height: 8.4rem;
+  min-width: 8.4px;
+  outline: none;
+  position: relative;
+  width: 10vw;
 }
 
 /* PROFILE IMAGES */
-.member-div .btn:nth-child(1){
-    background-image: url("./assets/images/ProfileCard.png");
+.member-div .btn:nth-child(1) {
+  background-image: url("./assets/images/ProfileCard.png");
 }
-.member-div .btn:nth-child(2){
-    background-image: url("./assets/images/ProfileCard\ \(1\).png");
+.member-div .btn:nth-child(2) {
+  background-image: url("./assets/images/ProfileCard\ \(1\).png");
 }
-.member-div .btn:nth-child(3){
-    background-image: url("./assets/images/ProfileCard\ \(2\).png");
+.member-div .btn:nth-child(3) {
+  background-image: url("./assets/images/ProfileCard\ \(2\).png");
 }
-.member-div .btn:nth-child(4){
-    background-image: url("./assets/images/ProfileCard\ \(3\).png");
+.member-div .btn:nth-child(4) {
+  background-image: url("./assets/images/ProfileCard\ \(3\).png");
 }
-.member-div .btn:nth-child(5){
-    background-image: url("./assets/images/Vector.png");
+.member-div .btn:nth-child(5) {
+  background-image: url("./assets/images/Vector.png");
 }
-.member-div .btn:hover{
-    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.9);
+.member-div .btn:hover {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.9);
 }
 
 /* USERS NAMES & ADD PROFILE */
-.member-div .btn span{
-    bottom: -3.5rem;
-    color: var(--gray-1);
-    font-size: 2rem;
-    left: 0;
-    position: absolute;
-    text-transform: capitalize;
-    width: inherit;
+.member-div .btn span {
+  bottom: -3.5rem;
+  color: var(--gray-1);
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  text-transform: capitalize;
+  width: inherit;
 }
 
-.newProfile{
-    background-color: transparent;
+.newProfile {
+  background-color: transparent;
 }
 
-
-.manageProfile{
-    background-color: transparent;
-    border: 1px solid gray;
-    color: gray;
-    cursor: pointer;
-    padding: 0.8rem 2.6rem;
-    margin-top: 10rem;
-    text-transform: capitalize;
-    font-size: 16px;
+.manageProfile {
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray;
+  cursor: pointer;
+  padding: 0.8rem 2.6rem;
+  margin-top: 10rem;
+  text-transform: capitalize;
+  font-size: 16px;
 }
 
-.manageProfile:hover{
-    border: 1px solid #fff;
-    color: #fff;
+.manageProfile:hover {
+  border: 1px solid #fff;
+  color: #fff;
 }
-
 
 /* HOME-PAGE BANNER  */
-.banner{
-    background-image: url("./assets/images/MoviePoster.png");
-    background-size: cover;
-    background-position: center;
-    color: var(--white);
-    object-fit: contain;
-    height: 700px;
+.banner {
+  background-image: url("./assets/images/MoviePoster.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  object-fit: contain;
+  height: 700px;
 }
 
-.banner__image{
-    margin-left: 40px;
+.banner__image {
+  margin-left: 40px;
 }
 
-.banner__contents{
-    height: 190px;
-    margin-left: 30px;
-    padding-top: 140px;
+.banner__contents {
+  height: 190px;
+  margin-left: 30px;
+  padding-top: 140px;
 }
 
 .banner__description,
 .banner__image,
 .top_ten,
 .subtitle,
-.banner__buttons{
-    padding-left: 50px;
+.banner__buttons {
+  padding-left: 50px;
 }
 
-.banner__description{
-    width: 660px;
-    height: 132px;
-    font-family: 'Netflix Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-
+.banner__description {
+  width: 660px;
+  height: 132px;
+  font-family: "Netflix Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
-.banner__button{
-    cursor: pointer;
-    color: var(--white);
-    outline: none;
-    border: none;
-    font-weight: 700;
-    border-radius: 0.2vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-color: rgba(51, 51, 51, 0.5);
+.banner__button {
+  cursor: pointer;
+  color: var(--white);
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
 }
 
-.banner__button:hover{
-    color: var(--black);
-    background-color: var(--light-gray-2);
-    transition: all 0.2s;
+.banner__button:hover {
+  color: var(--black);
+  background-color: var(--light-gray-2);
+  transition: all 0.2s;
 }
 
-
+/* CONTAINER */
+.container {
+  background: transparent;
+  width: 100%;
+  margin-top: -168px;
+  z-index: 99;
+}
+.box {
+  padding: 0 16px;
+}
+.container h2 {
+  color: #fff;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+.lista {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  align-content: center;
+}
+.lista::-webkit-scrollbar {
+  background: transparent;
+}
+.lista .show {
+  transition: 250ms all;
+}
+.lista .show:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
+}
+.show {
+  margin: 4px;
+}
 
 /*Lista 1F*/
-.F h4{
-    color: #fff;
-    margin: 16px 50px;
+.F h4 {
+  color: #fff;
+  margin: 16px 50px;
 }
-.lista{
-    display: flex;
+.lista {
+  display: flex;
 }
-.lista .show{
-    padding: 0 2px;
-    transition: 250ms all;
+.lista .show {
+  padding: 0 2px;
+  transition: 250ms all;
 }
-.lista .show:hover{
-    margin: 0 40px;
-    transform: scale(1.2);
+.lista .show:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
 }
