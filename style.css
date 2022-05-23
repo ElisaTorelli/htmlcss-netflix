@@ -68,3 +68,16 @@ body{
     background: rgba(20,20,20,.5);
     transition: 250ms all;
 }
+.frecciad{
+    position: absolute;
+    right: 0;
+    padding: 80px 10px;
+    text-align: center;
+    z-index: 1;
+    background: transparent;
+    border: none;
+}
+.frecciad:hover{
+    background: rgba(20,20,20,.5);
+    transition: 250ms all;
+}
