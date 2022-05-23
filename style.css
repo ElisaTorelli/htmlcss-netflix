@@ -39,7 +39,13 @@
 }
 .lista{
     display: flex;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+.lista::-webkit-scrollbar{
+    background: transparent;
 }
 .lista .show{
     padding: 0 2px;
