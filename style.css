@@ -28,11 +28,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #141414;
+    /* background-color: #141414; */
 }
 
 html{
     font-size: 62.5%;
+}
+
+body{
+    background-color: #141414;
 }
 
 /* COLOR VARIABLES */
@@ -143,6 +147,89 @@ html{
 .newProfile{
     background-color: transparent;
 }
+
+
+.manageProfile{
+    background-color: transparent;
+    border: 1px solid gray;
+    color: gray;
+    cursor: pointer;
+    padding: 0.8rem 2.6rem;
+    margin-top: 10rem;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.manageProfile:hover{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+/* HOME-PAGE BANNER  */
+.banner{
+    background-image: url("./assets/images/MoviePoster.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    object-fit: contain;
+    height: 700px;
+}
+
+.banner__image{
+    margin-left: 40px;
+}
+
+.banner__contents{
+    height: 190px;
+    margin-left: 30px;
+    padding-top: 140px;
+}
+
+.banner__description,
+.banner__image,
+.top_ten,
+.subtitle,
+.banner__buttons{
+    padding-left: 50px;
+}
+
+.banner__description{
+    width: 660px;
+    height: 132px;
+    font-family: 'Netflix Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+}
+
+.banner__button{
+    cursor: pointer;
+    color: var(--white);
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner__button:hover{
+    color: var(--black);
+    background-color: var(--light-gray-2);
+    transition: all 0.2s;
+}
+
+
 
 /*Lista 1F*/
 .F h4{
