@@ -39,7 +39,6 @@
 }
 .lista{
     display: flex;
-    padding-bottom: 15px;
     overflow: hidden;
     scroll-behavior: smooth;
     overflow-x: scroll;
@@ -48,10 +47,22 @@
     background: transparent;
 }
 .lista .show{
-    padding: 0 2px;
+    padding: 16px 2px;
     transition: 250ms all;
 }
 .lista .show:hover{
     margin: 0 40px;
     transform: scale(1.2);
+}
+.freccia{
+    position: absolute;
+    padding: 80px 10px;
+    text-align: center;
+    z-index: 1;
+    background: transparent;
+    border: none;
+}
+.freccia:hover{
+    background: rgba(20,20,20,.5);
+    transition: 250ms all;
 }
