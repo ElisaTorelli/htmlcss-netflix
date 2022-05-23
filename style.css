@@ -29,12 +29,17 @@
 
 }
 /*Lista 1F*/
+.F{
+    display: flex;
+    flex-direction: column;
+}
 .F h4{
     color: #fff;
-    margin: 16px 50px;
+    margin: 8px 50px;
 }
 .lista{
     display: flex;
+    padding-bottom: 25px;
 }
 .lista .show{
     padding: 0 2px;
