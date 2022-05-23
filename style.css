@@ -1,4 +1,14 @@
 /* NETFLIX FONTS */
+@font-face {
+    font-family: "Netflix Sans";
+    src: url("./assets/fonts/NetflixSansBlack.ttf");
+    src: url("./assets/fonts/NetflixSansBold.ttf") format("sansbold"),
+    url("./assets/fonts/NetflixSansIcon.ttf") format("icon"),
+    url("./assets/fonts/NetflixSansLight.ttf") format("light"),
+    url("./assets/fonts/NetflixSansMedium.ttf") format("medium"),
+    url("./assets/fonts/NetflixSansRegular.ttf") format("regular"),
+    url("./assets/fonts/NetflixSansThin.ttf") format("thin");
+}
 
 /* GENERAL SETTINGS */
 *{
@@ -8,6 +18,12 @@
 }
 
 :root{
-    /* color variables */
-}
+    --white: #fff;
+    --light-gray-1: #dddd;
+    --light-gray-2: #e5e5e5;
+    --gray-1: #8a8a8a;
+    --gray-2: #808080;
+    --black: #141414;
+    --red: #b9090b;
 
+}
