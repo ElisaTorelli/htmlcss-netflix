@@ -1,5 +1,5 @@
 /* NETFLIX FONTS */
-@font-face {
+/* @font-face {
     font-family: "Netflix Sans";
     src: url("./assets/fonts/NetflixSansBlack.ttf");
     src: url("./assets/fonts/NetflixSansBold.ttf") format("sansbold"),
@@ -8,6 +8,19 @@
     url("./assets/fonts/NetflixSansMedium.ttf") format("medium"),
     url("./assets/fonts/NetflixSansRegular.ttf") format("regular"),
     url("./assets/fonts/NetflixSansThin.ttf") format("thin");
+} */
+
+@font-face {
+    font-family: "Netflix Sans Bk";
+    src: url("./assets/fonts/NetflixSansBlack.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Netflix Sans";
+    src: url("./assets/fonts/NetflixSansRegular.ttf");
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* GENERAL SETTINGS */
@@ -15,8 +28,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Netflix Sans";
 }
 
+h1{
+    font-family: "Netflix Sans Bk";
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* COLOR VARIABLES */
 :root{
     --white: #fff;
     --light-gray-1: #dddd;
@@ -25,5 +48,119 @@
     --gray-2: #808080;
     --black: #141414;
     --red: #b9090b;
+}
 
+.whoIsWatching{
+    background-color: var(--black);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.logo-section{
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    height: 7rem;
+    justify-content: flex-start;
+    margin: auto;
+    width: 95vw;
+}
+
+.logo-section a img{
+    cursor: pointer;
+    height: 4rem;
+    width: 10rem;
+}
+
+.main-div{
+    align-items: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.main-div h1{
+    font-size: 6.5rem;
+}
+
+.member-div{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* PROFILE BOXES */
+.member-div .btn,
+.addIcon{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    height: 10vw;
+    margin-top: 64px;
+    margin-right: 3.5rem;
+    max-height: 20rem;
+    max-width: 20rem;
+    min-height: 8.4rem;
+    min-width: 8.4px;
+    outline: none;
+    position: relative;
+    width: 10vw;
+}
+
+/* PROFILE IMAGES */
+.member-div .btn:nth-child(1){
+    background-image: url("./assets/images/ProfileCard.png");
+}
+.member-div .btn:nth-child(2){
+    background-image: url("./assets/images/ProfileCard\ \(1\).png");
+}
+.member-div .btn:nth-child(3){
+    background-image: url("./assets/images/ProfileCard\ \(2\).png");
+}
+.member-div .btn:nth-child(4){
+    background-image: url("./assets/images/ProfileCard\ \(3\).png");
+}
+.member-div .btn:nth-child(5){
+    background-image: url("./assets/images/Vector.png");
+}
+.member-div .btn:hover{
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.9);
+}
+
+/* USERS NAMES & ADD PROFILE */
+.member-div .btn span{
+    bottom: -3.5rem;
+    color: var(--gray-1);
+    font-size: 2rem;
+    left: 0;
+    position: absolute;
+    text-transform: capitalize;
+    width: inherit;
+}
+
+.newProfile{
+    background-color: transparent;
+}
+
+
+/* GESTITSCI PROFILI BUTTON */
+.manageProfile{
+    background-color: transparent;
+    border: 1px solid var(--gray-1);
+    color: var(--gray-2);
+    cursor: pointer;
+    padding: 0.8rem 2.6rem;
+    margin-top: 12rem;
+    text-transform: uppercase;
+}
+
+.manageProfile:hover{
+    border: 1px solid var(--white);
+    color: var(--white);
 }
