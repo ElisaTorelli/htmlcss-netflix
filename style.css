@@ -62,7 +62,6 @@ body {
   --red: #b9090b;
 }
 
-
 /************************************************ INDEX.HTML SETTINGS *************************************************/
 .whoIsWatching {
   background-color: var(--black);
@@ -128,19 +127,19 @@ body {
 }
 
 /* PROFILE IMAGES */
-.member-div .p1 .btn{
+.member-div .p1 .btn {
   background-image: url("./assets/images/ProfileCard.png");
 }
-.member-div .p2 .btn{
+.member-div .p2 .btn {
   background-image: url("./assets/images/ProfileCard\ \(1\).png");
 }
-.member-div .p3 .btn{
+.member-div .p3 .btn {
   background-image: url("./assets/images/ProfileCard\ \(2\).png");
 }
-.member-div .p4 .btn{
+.member-div .p4 .btn {
   background-image: url("./assets/images/ProfileCard\ \(3\).png");
 }
-.member-div .p5 .btn{
+.member-div .p5 .btn {
   background-image: url("./assets/images/ProfileCard\ \(4\).png");
 }
 .member-div .btn:hover {
@@ -178,21 +177,19 @@ body {
   color: #fff;
 }
 
-
-
 /************************************************ HOME-PAGE.HTML SETTINGS *************************************************/
 /* NETFLIX LOGO SETTINGS */
-.navbar{
+.navbar {
   display: flex;
   width: 100%;
 }
 
-.logo{
+.logo {
   width: 115px;
   height: 70px;
 }
 
-.left__header__links ul li a{
+.left__header__links ul li a {
   text-decoration: none;
   color: var(--white);
   font-family: "Netflix Sans Thin";
@@ -201,19 +198,15 @@ body {
   line-height: 18px;
 }
 
-.left__header__links ul li{
-  display: inline-block;
-  margin: 6px; 
-}
-
-.right__header__links ul li{
+.left__header__links ul li {
   display: inline-block;
   margin: 6px;
 }
 
-
-
-
+.right__header__links ul li {
+  display: inline-block;
+  margin: 6px;
+}
 
 /* HOME-PAGE BANNER IMAGE */
 .banner {
@@ -226,7 +219,7 @@ body {
 }
 
 /* BANNER TITLE IMAGE */
-.banner__image img{
+.banner__image img {
   padding-top: 170px;
   margin-right: 100px;
   width: 29%;
@@ -240,11 +233,11 @@ body {
 }
 
 /* TOP 10 RED ICON & BEST TV SERIES*/
-.top__red__badge{
+.top__red__badge {
   padding-left: 30px;
 }
 
-.subtitle{
+.subtitle {
   display: inline-block;
   font-size: 24px;
   font-family: "Netflix Sans Thin";
@@ -274,10 +267,8 @@ body {
   flex-grow: 0;
 }
 
-
-
 /* BANNER BUTTONS GENERAL */
-.banner__buttons{
+.banner__buttons {
   margin-top: 16px;
 }
 .banner__button {
@@ -293,25 +284,21 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
   padding-right: 16px;
 }
 
-
 /* WHITE BUTTON */
-#white-btn{
+#white-btn {
   color: var(--black);
   background-color: var(--white);
 }
 
 /* LIGHTGRAY BUTTON */
-#lightgray-btn{
+#lightgray-btn {
   background-color: rgba(121, 112, 112, 0.322);
   color: var(--white);
 }
-
-
-
 
 /* CONTAINER */
 .container {
@@ -336,10 +323,11 @@ body {
 }
 .lista {
   display: flex;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  overflow-x: scroll;
   align-content: center;
+  position: relative;
+  /* overflow: hidden; */
+  /* scroll-behavior: smooth; */
+  /* overflow-x: scroll; */
 }
 .lista::-webkit-scrollbar {
   background: transparent;
@@ -347,12 +335,71 @@ body {
 .lista .show {
   transition: 250ms all;
 }
+
 .lista .show:hover {
-  margin: 0 40px;
   transform: scale(1.2);
+  background-color: black;
+  color: #fff;
+  z-index: 19;
+}
+.lista .box-info {
+  background: black;
+  display: none;
+  width: 100%;
+  padding: 16px;
+}
+.lista .show:hover .box-info {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 20;
+  margin-top: -1px;
+  display: block;
 }
 .show {
-  margin: 4px;
+  padding: 4px;
+}
+.container-button {
+  display: flex;
+  width: 100%;
+}
+.box-button {
+  display: flex;
+  width: 100%;
+}
+.box-button .circle-down {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.box-button .material-symbols-outlined {
+  font-size: 40px;
+  color: #ddd;
+}
+.section-info {
+  font-size: 14px;
+}
+.vm14 {
+  border: 1px solid #808080;
+  padding: 0 8px;
+}
+.section-info .material-symbols-outlined {
+  vertical-align: middle;
+  color: #ddd;
+}
+.info {
+  margin: 8px 0;
+}
+.info p {
+  color: green;
+}
+.show-description {
+  width: 100%;
+  font-size: 14px;
+}
+.show-description ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 /*Lista 1F*/
@@ -368,35 +415,32 @@ body {
   transition: 250ms all;
 }
 .lista .show:hover {
-  margin: 0 40px;
   transform: scale(1.2);
 }
 
-
-
 /* LAST SECTION LINKS */
 .last__section__image,
-#list_1{
+#list_1 {
   padding-left: 400px;
 }
 
-.last__section__image{
+.last__section__image {
   padding-top: 60px;
 }
 
-.last__section__links ul{
+.last__section__links ul {
   list-style-type: none;
 }
 
 #list_1 li a,
 #list_2 li a,
 #list_3 li a,
-#list_4 li a{
+#list_4 li a {
   padding-top: 24px;
   display: flex;
   flex-direction: column;
   height: 45px;
-  font-family: 'Netflix Sans Regular';
+  font-family: "Netflix Sans Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
