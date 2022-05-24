@@ -235,6 +235,12 @@ body {
 }
 .box {
   padding: 0 16px;
+  position: relative;
+}
+.box button img {
+  position: absolute;
+  top: 50%;
+  right: 24px;
 }
 .container h2 {
   color: #fff;
