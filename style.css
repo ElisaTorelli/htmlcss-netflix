@@ -29,7 +29,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: #141414; */
 }
 
 html {
@@ -54,14 +53,20 @@ body {
 
 /************************************************ MEDIA QUERIES (max-width 767px) *************************************************/
 @media all and (max-width: 767px) {
+  /* GENERAL SETTINGS */
+  .main-header,
+  .top__red__badge,
+  .banner__description{
+    display: none;
+  }
 
   body{
     max-width: 767px;
   }
-  .banner__image{
 
-  }
-  
+  /* TITLE MAIN BANNER SETTINGS */
+
+
   .navbar{
     background-color: transparent;
   }
@@ -383,41 +388,51 @@ body {
   transform: scale(1.2);
 }
 
-
-/* LAST SECTION LINKS */
-.last__section__image,
-#list_1{
-  padding-left: 400px;
-}
-
-.last__section__image{
-  padding-top: 60px;
-}
-
-.last__section__links ul{
-  list-style-type: none;
-}
-
-#list_1 li a,
-#list_2 li a,
-#list_3 li a,
-#list_4 li a{
-  padding-top: 24px;
-  display: flex;
-  flex-direction: column;
-  height: 45px;
-  font-family: 'Netflix Sans Regular';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  color: var(--gray-1);
-  text-decoration: none;
-  list-style: none;
-}
-
 /* FOOTER */
-footer{
-  font-family: 'Netflix Sans Regular';
+.last__section__image img{
+  padding-bottom: 16px;
+}
+
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer-cols ul li{
+  padding-bottom: 20px;
+}
+
+.footer,
+.footer a {
   color: var(--gray-1);
-  padding-top: 16px;
+  font-size: 16px;
+  font-family: "Netflix Sans Regular";
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+.footer-cols ul li a{
+  text-decoration: none;
+}
+
+.footer-cols ul li a img{
+  width: 70%;
+  height: 30%;
+}
+
+.second_link{
+  list-style-type: none;
 }
