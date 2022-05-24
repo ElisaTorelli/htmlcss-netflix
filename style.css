@@ -35,15 +35,18 @@ body{
     display: flex;
     flex-direction: column;
 }
-.F h4{
-    color: #fff;
-    margin: 8px 50px;
-}
+/*Lista show*/
 .lista{
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
     overflow-x: scroll;
+    margin: 16px 0;
+}
+.lista h4{
+    color: #fff;
+    position: absolute;
+    margin: -8px 0;
 }
 .lista::-webkit-scrollbar{
     background: transparent;
@@ -56,6 +59,50 @@ body{
     margin: 0 40px;
     transform: scale(1.2);
 }
+/*Box-info*/
+.lista .box-info{
+    display: none;
+}
+.lista .show:hover .box-info{
+    padding: 0 8px;
+    display: flex;
+    background-color: #808080;
+}
+.play button{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 4px 8px;
+}
+.plus img{
+    height: 16px;
+}
+.plus button{
+    background-color: #141414;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #fff;
+    width: 35px;
+    height: 35px;
+    padding: 6px 8px;
+}
+.last{
+    justify-content: flex-end;
+}
+.last button{
+    background-color: #141414;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #fff;
+    width: 35px;
+    height: 35px;
+    padding: 6px 8px;
+}
+.desc{
+    flex-wrap: wrap;
+}
+/*Freccia*/
 .freccia{
     position: absolute;
     padding: 80px 10px;
@@ -80,4 +127,8 @@ body{
 .frecciad:hover{
     background: rgba(20,20,20,.5);
     transition: 250ms all;
+}
+/*Utilities*/
+.green{
+    color: green;
 }
