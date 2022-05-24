@@ -1,15 +1,4 @@
 /* NETFLIX FONTS */
-/* @font-face {
-    font-family: "Netflix Sans";
-    src: url("./assets/fonts/NetflixSansBlack.ttf");
-    src: url("./assets/fonts/NetflixSansBold.ttf") format("sansbold"),
-    url("./assets/fonts/NetflixSansIcon.ttf") format("icon"),
-    url("./assets/fonts/NetflixSansLight.ttf") format("light"),
-    url("./assets/fonts/NetflixSansMedium.ttf") format("medium"),
-    url("./assets/fonts/NetflixSansRegular.ttf") format("regular"),
-    url("./assets/fonts/NetflixSansThin.ttf") format("thin");
-} */
-
 @font-face {
   font-family: "Netflix Sans Bk";
   src: url("./assets/fonts/NetflixSansBlack.ttf");
@@ -63,6 +52,22 @@ body {
 }
 
 
+/************************************************ MEDIA QUERIES (max-width 767px) *************************************************/
+@media all and (max-width: 767px) {
+
+  body{
+    max-width: 767px;
+  }
+  .banner__image{
+
+  }
+  
+  .navbar{
+    background-color: transparent;
+  }
+}
+
+
 /************************************************ INDEX.HTML SETTINGS *************************************************/
 .whoIsWatching {
   background-color: var(--black);
@@ -98,6 +103,8 @@ body {
 
 .main-div h1 {
   font-size: 6.5rem;
+  font-family: "Netflix Sans Regular";
+  font-weight: 400;
 }
 
 .member-div {
@@ -188,8 +195,13 @@ body {
 }
 
 .logo{
-  width: 115px;
+  width: 120px;
   height: 70px;
+}
+
+.left__header__links{
+  margin-top: 20px;
+  margin-left: 16px;
 }
 
 .left__header__links ul li a{
@@ -201,18 +213,20 @@ body {
   line-height: 18px;
 }
 
-.left__header__links ul li{
+.left__header__links ul li,
+.right__header__links ul li{
   display: inline-block;
   margin: 6px; 
 }
 
-.right__header__links ul li{
-  display: inline-block;
-  margin: 6px;
+.right__header__links{
+  margin-top: 10px;
+  margin-left: 670px;
 }
 
-
-
+.profile__img{
+  vertical-align: middle;
+}
 
 
 /* HOME-PAGE BANNER IMAGE */
@@ -248,7 +262,8 @@ body {
   display: inline-block;
   font-size: 24px;
   font-family: "Netflix Sans Thin";
-  padding-bottom: 16px;
+  padding-bottom: 30px;
+  vertical-align: middle;
 }
 
 /* MAIN BANNER GENERAL */
@@ -273,8 +288,6 @@ body {
   order: 2;
   flex-grow: 0;
 }
-
-
 
 /* BANNER BUTTONS GENERAL */
 .banner__buttons{
@@ -309,8 +322,6 @@ body {
   background-color: rgba(121, 112, 112, 0.322);
   color: var(--white);
 }
-
-
 
 
 /* CONTAINER */
@@ -367,7 +378,6 @@ body {
 }
 
 
-
 /* LAST SECTION LINKS */
 .last__section__image,
 #list_1{
@@ -397,4 +407,11 @@ body {
   color: var(--gray-1);
   text-decoration: none;
   list-style: none;
+}
+
+/* FOOTER */
+footer{
+  font-family: 'Netflix Sans Regular';
+  color: var(--gray-1);
+  padding-top: 16px;
 }
