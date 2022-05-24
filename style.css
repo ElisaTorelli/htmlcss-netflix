@@ -65,12 +65,11 @@ body {
   }
 
   /* TITLE MAIN BANNER SETTINGS */
-
-
   .navbar{
     background-color: transparent;
   }
 }
+
 
 
 /************************************************ INDEX.HTML SETTINGS *************************************************/
@@ -191,7 +190,6 @@ body {
 }
 
 
-
 /************************************************ HOME-PAGE.HTML SETTINGS *************************************************/
 /* NETFLIX LOGO SETTINGS */
 .navbar{
@@ -232,7 +230,6 @@ body {
 .profile__img{
   vertical-align: middle;
 }
-
 
 /* HOME-PAGE BANNER IMAGE */
 .banner {
@@ -315,7 +312,6 @@ body {
   padding-right: 16px;
 }
 
-
 /* WHITE BUTTON */
 #white-btn{
   color: var(--black);
@@ -327,7 +323,6 @@ body {
   background-color: rgba(121, 112, 112, 0.322);
   color: var(--white);
 }
-
 
 /* CONTAINER */
 .container {
