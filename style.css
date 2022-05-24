@@ -17,9 +17,21 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Netflix Sans";
+  font-family: "Netflix Sans Regular";
   src: url("./assets/fonts/NetflixSansRegular.ttf");
-  font-weight: 400;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Netflix Sans Medium";
+  src: url("./assets/fonts/NetflixSansMedium.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Netflix Sans Thin";
+  src: url("./assets/fonts/NetflixSansThin.ttf");
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -50,6 +62,8 @@ body {
   --red: #b9090b;
 }
 
+
+/************************************************ INDEX.HTML SETTINGS *************************************************/
 .whoIsWatching {
   background-color: var(--black);
   min-height: 100vh;
@@ -114,26 +128,26 @@ body {
 }
 
 /* PROFILE IMAGES */
-.member-div .btn:nth-child(1) {
+.member-div .p1 .btn{
   background-image: url("./assets/images/ProfileCard.png");
 }
-.member-div .btn:nth-child(2) {
+.member-div .p2 .btn{
   background-image: url("./assets/images/ProfileCard\ \(1\).png");
 }
-.member-div .btn:nth-child(3) {
+.member-div .p3 .btn{
   background-image: url("./assets/images/ProfileCard\ \(2\).png");
 }
-.member-div .btn:nth-child(4) {
+.member-div .p4 .btn{
   background-image: url("./assets/images/ProfileCard\ \(3\).png");
 }
-.member-div .btn:nth-child(5) {
-  background-image: url("./assets/images/Vector.png");
+.member-div .p5 .btn{
+  background-image: url("./assets/images/ProfileCard\ \(4\).png");
 }
 .member-div .btn:hover {
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.9);
 }
 
-/* USERS NAMES & ADD PROFILE */
+/* USERS NAMES & ADD PROFILE SETTINGS*/
 .member-div .btn span {
   bottom: -3.5rem;
   color: var(--gray-1);
@@ -164,40 +178,95 @@ body {
   color: #fff;
 }
 
-/* HOME-PAGE BANNER  */
+
+
+/************************************************ HOME-PAGE.HTML SETTINGS *************************************************/
+/* NETFLIX LOGO SETTINGS */
+.navbar{
+  display: flex;
+  width: 100%;
+}
+
+.logo{
+  width: 115px;
+  height: 70px;
+}
+
+.left__header__links ul li a{
+  text-decoration: none;
+  color: var(--white);
+  font-family: "Netflix Sans Thin";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.left__header__links ul li{
+  display: inline-block;
+  margin: 6px; 
+}
+
+.right__header__links ul li{
+  display: inline-block;
+  margin: 6px;
+}
+
+
+
+
+
+/* HOME-PAGE BANNER IMAGE */
 .banner {
   background-image: url("./assets/images/MoviePoster.png");
   background-size: cover;
   background-position: center;
   color: var(--white);
   object-fit: contain;
-  height: 700px;
+  height: 750px;
 }
 
-.banner__image {
-  margin-left: 40px;
+/* BANNER TITLE IMAGE */
+.banner__image img{
+  padding-top: 170px;
+  margin-right: 100px;
+  width: 29%;
 }
 
+/* BANNER TITLE DESCRIPTION */
 .banner__contents {
-  height: 190px;
+  height: 16px;
   margin-left: 30px;
-  padding-top: 140px;
+  padding-top: 10px;
 }
 
+/* TOP 10 RED ICON & BEST TV SERIES*/
+.top__red__badge{
+  padding-left: 30px;
+}
+
+.subtitle{
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Netflix Sans Thin";
+  padding-bottom: 16px;
+}
+
+/* MAIN BANNER GENERAL */
 .banner__description,
 .banner__image,
 .top_ten,
 .subtitle,
-.banner__buttons {
-  padding-left: 50px;
+.banner__buttons,
+.logo {
+  padding-left: 25px;
 }
 
 .banner__description {
   width: 660px;
   height: 132px;
-  font-family: "Netflix Sans";
+  font-family: "Netflix Sans Regular";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 22px;
   line-height: 33px;
   flex: none;
@@ -205,9 +274,14 @@ body {
   flex-grow: 0;
 }
 
+
+
+/* BANNER BUTTONS GENERAL */
+.banner__buttons{
+  margin-top: 16px;
+}
 .banner__button {
   cursor: pointer;
-  color: var(--white);
   outline: none;
   border: none;
   font-weight: 700;
@@ -215,16 +289,29 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
   margin-right: 1rem;
-  padding-top: 0.5rem;
+  padding-top: 0.6rem;
   padding-bottom: 0.5rem;
-  background-color: rgba(51, 51, 51, 0.5);
 }
 
-.banner__button:hover {
-  color: var(--black);
-  background-color: var(--light-gray-2);
-  transition: all 0.2s;
+.material-symbols-outlined{
+  padding-right: 16px;
 }
+
+
+/* WHITE BUTTON */
+#white-btn{
+  color: var(--black);
+  background-color: var(--white);
+}
+
+/* LIGHTGRAY BUTTON */
+#lightgray-btn{
+  background-color: rgba(121, 112, 112, 0.322);
+  color: var(--white);
+}
+
+
+
 
 /* CONTAINER */
 .container {
@@ -277,4 +364,37 @@ body {
 .lista .show:hover {
   margin: 0 40px;
   transform: scale(1.2);
+}
+
+
+
+/* LAST SECTION LINKS */
+.last__section__image,
+#list_1{
+  padding-left: 400px;
+}
+
+.last__section__image{
+  padding-top: 60px;
+}
+
+.last__section__links ul{
+  list-style-type: none;
+}
+
+#list_1 li a,
+#list_2 li a,
+#list_3 li a,
+#list_4 li a{
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+  font-family: 'Netflix Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--gray-1);
+  text-decoration: none;
+  list-style: none;
 }
