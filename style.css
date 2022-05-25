@@ -1,3 +1,31 @@
+/* 
+  1.NETFLIX FONTS
+  2.GENERAL SETTINGS
+  3.COLOR VARIABLES
+    a.HeaderLeft
+  4.INDEX.HTML SETTINGS
+  5.PROFILE BOXES
+  6.PROFILE IMAGES
+  7.USERS NAMES & ADD PROFILE SETTINGS
+  8.HOME-PAGE.HTML SETTINGS 
+    a.NetflixLogoSettings
+    b.HomePageBannerImage
+    c.BannerTitleImage
+    d.BannerTitleDescription
+    e.Top10RedIcon&BestTvSeries
+    f.MainBannerGeneral
+    g.BannerButtonsGeneral
+    h.WhiteButton
+    i.LightGrayButton
+  9.CONTAINER
+  10.FOOTER
+  11.MEDIA QUERIES(max-width 768px)
+    a.GeneralSettings
+    b.TitleMainBannerSettings
+*/
+
+
+
 /* NETFLIX FONTS */
 @font-face {
   font-family: "Netflix Sans Bk";
@@ -55,28 +83,10 @@ body {
 }
 
 
-/************************************************ MEDIA QUERIES (max-width 767px) *************************************************/
-@media all and (max-width: 767px) {
-  /* GENERAL SETTINGS */
-  .main-header,
-  .top__red__badge,
-  .banner__description{
-    display: none;
-  }
 
-  body{
-    max-width: 767px;
-  }
-
-  /* TITLE MAIN BANNER SETTINGS */
-  .navbar{
-    background-color: transparent;
-  }
-}
-
-
-
-/************************************************ INDEX.HTML SETTINGS *************************************************/
+/************************************************
+  INDEX.HTML SETTINGS
+*************************************************/
 .whoIsWatching {
   background-color: var(--black);
   min-height: 100vh;
@@ -194,8 +204,10 @@ body {
 }
 
 
-/************************************************ HOME-PAGE.HTML SETTINGS *************************************************/
-/* NETFLIX LOGO SETTINGS */
+/************************************************
+  HOME-PAGE.HTML SETTINGS 
+*************************************************/
+/* NetflixLogoSettings */
 .navbar{
   display: flex;
   width: 100%;
@@ -235,7 +247,7 @@ body {
   vertical-align: middle;
 }
 
-/* HOME-PAGE BANNER IMAGE */
+/* HomePageBannerImage */
 .banner {
   background-image: url("./assets/images/MoviePoster.png");
   background-size: cover;
@@ -245,21 +257,21 @@ body {
   height: 750px;
 }
 
-/* BANNER TITLE IMAGE */
+/* BannerTitleImage */
 .banner__image img{
   padding-top: 170px;
   margin-right: 100px;
   width: 29%;
 }
 
-/* BANNER TITLE DESCRIPTION */
+/* BannerTitleDescription */
 .banner__contents {
   height: 16px;
   margin-left: 30px;
   padding-top: 10px;
 }
 
-/* TOP 10 RED ICON & BEST TV SERIES*/
+/* Top10RedIcon&BestTvSeries */
 .top__red__badge{
   padding-left: 30px;
 }
@@ -273,7 +285,7 @@ body {
   padding-left: 16px;
 }
 
-/* MAIN BANNER GENERAL */
+/* MainBannerGeneral */
 .banner__description,
 .banner__image,
 .top_ten,
@@ -295,7 +307,7 @@ body {
   flex-grow: 0;
 }
 
-/* BANNER BUTTONS GENERAL */
+/* BannerButtonsGeneral */
 .banner__buttons{
   margin-top: 16px;
 }
@@ -316,13 +328,13 @@ body {
   padding-right: 16px;
 }
 
-/* WHITE BUTTON */
+/* WhiteButton */
 #white-btn{
   color: var(--black);
   background-color: var(--white);
 }
 
-/* LIGHTGRAY BUTTON */
+/* LightGrayButton */
 #lightgray-btn{
   background-color: rgba(121, 112, 112, 0.322);
   color: var(--white);
@@ -431,4 +443,41 @@ body {
 
 .second_link{
   list-style-type: none;
+}
+
+
+/************************************************ 
+  MEDIA QUERIES (max-width 768px)
+*************************************************/
+@media all and (max-width: 768px) {
+  /* GeneralSettings */
+  .main-header,
+  .top__red__badge,
+  .banner__description{
+    display: none;
+  }
+  body{
+    max-width: 768px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  /* TitleMainBannerSettings */
+  .navbar{
+    background-color: transparent;
+  }
+
+  .banner__image img{
+    padding-top: 300px;
+  }
+
+  .subtitle{
+    display: none;
+  }
+
+  #gray_box{
+    display: none;
+  }
 }
