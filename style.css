@@ -35,6 +35,10 @@ html {
   font-size: 62.5%;
 }
 
+h2{
+  font-family: "Netflix Sans Regular";
+}
+
 body {
   background-color: #141414;
 }
@@ -361,12 +365,13 @@ body {
 }
 
 /*Lista 1F*/
-.F h4 {
+.F h2 {
   color: #fff;
-  margin: 16px 50px;
+  margin-left: 15px;
 }
 .lista {
   display: flex;
+  padding-left: 15px;
 }
 .lista .show {
   padding: 0 2px;
