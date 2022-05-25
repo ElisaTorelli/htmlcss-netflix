@@ -324,12 +324,15 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
   margin-right: 1rem;
-  padding-top: 0.6rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  height: 48px;
+  width: 200px;
+  font-size: 16px;
 }
-
-.material-symbols-outlined {
-  padding-right: 16px;
+.banner__button img {
+  vertical-align: middle;
+  padding-right: 20px;
 }
 
 
@@ -357,10 +360,15 @@ body {
   padding: 0 16px;
   position: relative;
 }
-.box button img {
+.box button {
   position: absolute;
-  top: 50%;
-  right: 24px;
+  top: 0;
+  right: 0;
+  background: transparent;
+  height: 210px;
+  padding: 0 24px;
+  border: none;
+  z-index: 18;
 }
 .container h2 {
   color: #fff;
@@ -370,10 +378,11 @@ body {
 .lista {
   display: flex;
   align-content: center;
-  position: relative;
-  /* overflow: hidden; */
+  /* overflow-y: hidden; */
   /* scroll-behavior: smooth; */
   /* overflow-x: scroll; */
+  padding: 0 12px;
+  height: 210px;
 }
 .lista::-webkit-scrollbar {
   background: transparent;
@@ -402,8 +411,11 @@ body {
   margin-top: -1px;
   display: block;
 }
+button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
 .show {
-  padding: 4px;
+  padding: 8px;
 }
 .container-button {
   display: flex;
