@@ -19,9 +19,10 @@
     i.LightGrayButton
   9.CONTAINER
   10.FOOTER
-  11.MEDIA QUERIES(max-width 768px)
+  11.MEDIA QUERIES (max-width 768px) for HOME-PAGE.HTML
     a.GeneralSettings
     b.TitleMainBannerSettings
+  12.MEDIA QUERIES (max-width 768px) for INDEX.HTML
 */
 
 
@@ -174,7 +175,7 @@ body {
 
 /* USERS NAMES & ADD PROFILE SETTINGS*/
 .member-div .btn span {
-  bottom: -3.5rem;
+  bottom: -6rem;
   color: var(--gray-1);
   font-size: 2rem;
   left: 0;
@@ -447,15 +448,31 @@ body {
 
 
 /************************************************ 
-  MEDIA QUERIES (max-width 768px)
+  MEDIA QUERIES (max-width 768px) for HOME-PAGE.HTML
 *************************************************/
 @media all and (max-width: 768px) {
   /* GeneralSettings */
-  .main-header,
+  /* .main-header, */
   .top__red__badge,
-  .banner__description{
+  .banner__description,
+  .left__header__links,
+  .right__header__links{
     display: none;
   }
+
+  .banner{
+    width: 600px;
+  }
+
+  .ringbell-icon{
+    display: block;
+  }
+
+  .main-header{
+    background-color: transparent;
+    height: 0;
+  }
+
   body{
     max-width: 768px;
   }
@@ -479,5 +496,19 @@ body {
 
   #gray_box{
     display: none;
+  }
+}
+
+/************************************************ 
+  MEDIA QUERIES (max-width 768px) for INDEX.HTML
+*************************************************/
+@media all and (max-width: 768px) {
+  h1{
+    text-align: center;
+  }
+
+  .member-div .btn, 
+  .addIcon{
+    min-height: 10px;
   }
 }
