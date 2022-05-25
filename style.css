@@ -60,6 +60,9 @@ body{
     transform: scale(1.2);
 }
 /*Box-info*/
+.box-info{
+  height: 150px;
+}
 .lista .box-info{
     display: none;
 }
@@ -100,7 +103,13 @@ body{
     padding: 6px 8px;
 }
 .desc{
-    
+    position: relative;
+    left: -145px;
+    top: 60px;
+    display: flex;
+}
+.desc p{
+  font-size: 14px;
 }
 /*Freccia*/
 .freccia{
