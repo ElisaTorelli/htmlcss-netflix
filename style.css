@@ -214,12 +214,7 @@ body {
   HOME-PAGE.HTML SETTINGS 
 *************************************************/
 /* NetflixLogoSettings */
-.navbar{
-
-
-/* NETFLIX LOGO SETTINGS */
 .navbar {
-
   display: flex;
   width: 100%;
 }
