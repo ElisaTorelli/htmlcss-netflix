@@ -266,13 +266,13 @@ body {
   font-family: "Netflix Sans Thin";
   padding-bottom: 30px;
   vertical-align: middle;
+  padding-left: 16px;
 }
 
 /* MAIN BANNER GENERAL */
 .banner__description,
 .banner__image,
 .top_ten,
-.subtitle,
 .banner__buttons,
 .logo {
   padding-left: 25px;
@@ -379,7 +379,8 @@ body {
 
 /* FOOTER */
 .last__section__image img{
-  padding-bottom: 16px;
+  padding-bottom: 18px;
+  padding-top: 24px;
 }
 
 .footer {
