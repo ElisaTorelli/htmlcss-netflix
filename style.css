@@ -475,57 +475,7 @@ body{
   transform: scale(1.2);
 }
 /*Box-info*/
-.box-info{
-  height: 150px;
-}
-.lista .box-info{
-    display: none;
-}
-.lista .show:hover .box-info{
-    padding: 0 8px;
-    display: flex;
-    background-color: #808080;
-}
-.play button{
-    background-color: #fff;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    padding: 4px 8px;
-}
-.plus img{
-    height: 16px;
-}
-.plus button{
-    background-color: #141414;
-    border-radius: 50%;
-    border: 1px solid;
-    border-color: #fff;
-    width: 35px;
-    height: 35px;
-    padding: 6px 8px;
-}
-.last{
-    justify-content: flex-end;
-}
-.last button{
-    background-color: #141414;
-    border-radius: 50%;
-    border: 1px solid;
-    border-color: #fff;
-    width: 35px;
-    height: 35px;
-    padding: 6px 8px;
-}
-.desc{
-    position: relative;
-    left: -145px;
-    top: 60px;
-    display: flex;
-}
-.desc p{
-  font-size: 14px;
-}
+
 /*Freccia*/
 .freccia{
     position: absolute;
