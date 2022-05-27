@@ -528,6 +528,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
 /* freccia  */
 .freccia {
   padding: 48px 20px;
@@ -591,24 +592,193 @@ body {
   position: relative;
   z-index: 2;
 }
-
-/*Lista 1F*/
-.F h2 {
-  color: var(--light-gray-2);
-  margin-left: 15px;
+  
+.cards::-webkit-scrollbar {
+  background: transparent;
 }
-.lista {
+.poster-container {
   display: flex;
-  padding-left: 15px;
-  margin-top: 20px;
 }
-.lista .show {
-  padding: 0 2px;
-  transition: 250ms all;
+.card-container {
+  width: 215px;
+  padding: 4px;
+  position: relative;
 }
-.lista .show:hover {
-  transform: scale(1.2);
+.card {
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
 }
+ 
+.media-player {
+  width: 284px;
+  height: 300px;
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -43px;
+  /* margin-top: -43px; */
+}
+/*Media player*/
+.media-player.card1 {
+  background-image: url(./assets/images/Yanimda-kal.png);
+}
+.media-player.card2 {
+  background-image: url(./assets/images/Snowpiercere.png);
+}
+.media-player.card3 {
+  background-image: url(./assets/images/New-amsterdam.png);
+}
+.media-player.card4 {
+  background-image: url(./assets/images/Morgan-Freeman.png);
+}
+.media-player.card5 {
+  background-image: url(./assets/images/Modern-family.png);
+}
+.media-player.card6 {
+  background-image: url(./assets/images/Matrix.png);
+}
+.media-player.card7 {
+  background-image: url(./assets/images/Leyla-and-Mecnun.png);
+}
+.media-player.card8 {
+  background-image: url(./assets/images/Ginny-&-Georgia.png);
+}
+.media-player.card9 {
+  background-image: url(./assets/images/Brooklyn-nini-nine.png);
+}
+/*NewMedia*/
+.media-player.card10 {
+  background-image: url(./assets/images/himym.png);
+}
+.media-player.card11 {
+  background-image: url(./assets/images/harrypotter.png);
+}
+.media-player.card12 {
+  background-image: url(./assets/images/rickandmorty.png);
+}
+.media-player.card13 {
+  background-image: url(./assets/images/murder.png);
+}
+.media-player.card14 {
+  background-image: url(./assets/images/outlander.png);
+}
+.media-player.card15 {
+  background-image: url(./assets/images/witcher.png);
+}
+.media-player.card16 {
+  background-image: url(./assets/images/lampada.png);
+}
+.media-player.card17 {
+  background-image: url(./assets/images/oblack.png);
+}
+.media-player.card18 {
+  background-image: url(./assets/images/sir.png);
+}
+.media-player.card19 {
+  background-image: url(./assets/images/davinci.png);
+}
+.card:hover > .media-player {
+  display: block;
+  position: relative;
+  z-index: 999;
+  border-radius: 8px;
+}
+.card-container .card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card:hover img {
+  display: none;
+}
+.card-container .card:hover img {
+  border-bottom-left-radius: 0;
+}
+.card__info {
+  display: none;
+  padding: 8px;
+}
+.card-container .card:hover .card__info {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: black;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.container-button {
+  display: flex;
+  width: 100%;
+}
+.box-button {
+  display: flex;
+  width: 100%;
+}
+.box-button .circle-down {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.box-button .material-symbols-outlined {
+  font-size: 40px;
+  color: #ddd;
+}
+.section-info {
+  font-size: 14px;
+}
+.vm14 {
+  border: 1px solid #808080;
+  padding: 0 8px;
+}
+.section-info .material-symbols-outlined {
+  vertical-align: middle;
+  color: #ddd;
+}
+.info {
+  margin: 8px 0;
+}
+.info p {
+  color: green;
+}
+.show-description {
+  width: 100%;
+  font-size: 14px;
+}
+.show-description ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/*Freccia*/
+.freccia{
+    position: absolute;
+    padding: 48px 20px;
+    text-align: center;
+    z-index: 1;
+    background: transparent;
+    border: none;
+}
+.freccia:hover{
+    background: rgba(20,20,20,.5);
+    transition: 250ms all;
+}
+.frecciad{
+    position: absolute;
+    right: 0;
+    padding: 48px 20px;
+    text-align: center;
+    z-index: 1;
+    background: transparent;
+    border: none;
+}
+.frecciad:hover{
+    background: rgba(20,20,20,.5);
+    transition: 250ms all;
+}
+
 
 /* FOOTER */
 .footer {
