@@ -628,7 +628,7 @@ body {
 /*Freccia*/
 .freccia{
     position: absolute;
-    padding: 80px 10px;
+    padding: 48px 20px;
     text-align: center;
     z-index: 1;
     background: transparent;
@@ -641,7 +641,7 @@ body {
 .frecciad{
     position: absolute;
     right: 0;
-    padding: 80px 10px;
+    padding: 48px 20px;
     text-align: center;
     z-index: 1;
     background: transparent;
