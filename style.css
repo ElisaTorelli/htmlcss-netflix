@@ -365,7 +365,7 @@ body {
   color: var(--white);
 }
 
-/* Marika */
+
 /* Utilities */
 .invisible-scrollbar::-webkit-scrollbar {
   display: none;
